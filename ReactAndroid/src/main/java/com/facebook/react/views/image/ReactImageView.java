@@ -439,11 +439,11 @@ public class ReactImageView extends GenericDraweeView {
     hierarchy.setActualImageScaleType(mScaleType);
 
     if (mDefaultImageDrawable != null) {
-      hierarchy.setPlaceholderImage(mDefaultImageDrawable, ScalingUtils.ScaleType.CENTER);
+      hierarchy.setPlaceholderImage(mDefaultImageDrawable, this.mScaleType);
     }
 
     if (mLoadingImageDrawable != null) {
-      hierarchy.setPlaceholderImage(mLoadingImageDrawable, ScalingUtils.ScaleType.CENTER);
+      hierarchy.setPlaceholderImage(mLoadingImageDrawable, this.mScaleType);
     }
 
     boolean usePostprocessorScaling =
